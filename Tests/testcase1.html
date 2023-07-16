@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miya Kids Salon</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: gray;
+            height: 4000px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #main-header {
+            position: relative;
+            height: 600px;
+            background: url('1.jpg') center fixed no-repeat;
+            background-size: cover;
+        }
+        .header-pinky-cover {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 192, 203, 0.644);
+            z-index: 10;
+        }
+        .greetings {
+            padding: 0 10px;
+            margin-top: 100px;
+            z-index: 20;
+        }
+        .greetings h1 {
+            font-size: 4em;
+        }
+        #greetings-description {
+            font-size: 1.2em;
+            padding: 20px 10px;
+            max-width: 600px;
+            min-width: 200px;
+            border-radius: 5px;
+            background-color: rgb(255, 164, 179);
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.212);
+        }
+        .main-navigation-bar {
+            position: sticky;
+            top: 100%;
+            background-color: rgba(255, 255, 255, 0.336);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 20px 10px;
+        }
+        .nav-links {
+            display: inline-block;
+            list-style: none;
+            margin: auto;
+            float: right;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            padding: 0 9px;
+            transition: 0.2s all linear;
+        }
+        .nav-links a:hover {
+            color: rgb(255, 32, 69);
+        }
+        .nav-links li {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-pinky-cover">
+            <div class="greetings">
+                <h1>Miya Kids Salon</h1>
+                <div id="greetings-description">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown 
+                        printer 
+                    </p>
+                </div>
+            </div>
+            <nav class="main-navigation-bar">
+                <span id="logo">Logo</span>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
